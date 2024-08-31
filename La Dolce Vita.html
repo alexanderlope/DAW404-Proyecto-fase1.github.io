@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - Restaurante</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Nuestro Restaurante</h1>
+        <div class="user-profile">
+            <img src="img/user-icon-on-transparent-background-free-png.webp" alt="Perfil" id="userLogo" class="user-logo">
+            <div id="profileMenu" class="profile-menu hidden">
+                <a href="#" id="profileLink">Perfil</a>
+                <a href="#" id="logoutLink">Cerrar Sesión</a>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="La Dolce Vita.html">Inicio</a></li>
+            <li><a href="Reserva.html">Reservas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="menu">
+            <h2>Menú</h2>
+            <div class="menu-item">
+            <img src="img/pizza-crust-showcased-wooden-board-accompanied-plate-tomato-cheese-visually-stunning-image-combines-286890442.webp" alt="Pizza">
+                <h3>Pizza</h3>
+                <p>$10.00</p>
+                <button onclick="agregarAlCarrito('Pizza', 10)">Agregar al carrito</button>
+            </div>
+            <div class="menu-item">
+                <img src="img/585x450-1.png" alt="Lazaña">
+                <h3>Lasaña de carne con queso</h3>
+                <p>$8.00</p>
+                <button onclick="agregarAlCarrito('Hamburguesa', 8)">Agregar al carrito</button>
+            </div>
+            <div class="menu-item">
+                <img src="img/ensalada-verduras-frescas-sabrosas-tazon-sobre-fondo-blanco_488220-16084.avif" alt="Ensalada">
+                <h3>Ensalada</h3>
+                <p>$5.00</p>
+                <button onclick="agregarAlCarrito('Ensalada', 5)">Agregar al carrito</button>
+            </div>
+            <div class="menu-item">
+                <img src="img/istockphoto-1144823591-612x612.jpg" alt="Pastas">
+                <h3>Pasta</h3>
+                <p>$15.00</p>
+                <button onclick="agregarAlCarrito('Ensalada', 5)">Agregar al carrito</button>
+            </div>
+            <div class="menu-item">
+                <img src="img/plato-deliciosos-ravioles-aislado-sobre-fondo-blanco_185193-66725.avif" alt="Rabioli">
+                <h3>Raviolí</h3>
+                <p>$25.00</p>
+                <button onclick="agregarAlCarrito('Ensalada', 5)">Agregar al carrito</button>
+            </div>
+            <div class="menu-item">
+                <img src="img/risotto-italian-food-photo.jpg" alt="Risotto">
+                <h3>Risotto</h3>
+                <p>$21.00</p>  
+                <button onclick="agregarAlCarrito('Ensalada', 5)">Agregar al carrito</button>
+            </div>
+            <div class="menu-item">
+                <img src="img/tiramisu-fondo-blanco-alta-calidad-ultra-h_889056-9998.avif" alt="Tiramisu">
+                <h3>Tiramisu</h3>
+                <p>$15.00</p>
+                <button onclick="agregarAlCarrito('Ensalada', 5)">Agregar al carrito</button>
+            </div>
+            <div class="menu-item">
+                <img src="img/ice-cream-scoops-bowl-strawberry-260nw-138474008.webp" alt="Gelato">
+                <h3>Gelato</h3>
+                <p>$15.00</p>  
+                <button onclick="agregarAlCarrito('Ensalada', 5)">Agregar al carrito</button>
+            </div>
+        </section>
+        <section id="cart">
+            <h2>Carrito</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="total">0.00</span></p>
+        </section>
+        <section id="payment-methods">
+            <h2>Formas de Pago</h2>
+            <select id="paymentSelect">
+                <option value="Tarjeta de Crédito">Tarjeta de Crédito</option>
+                <option value="PayPal">PayPal</option>
+                <option value="Efectivo">Efectivo</option>
+            </select>
+            <button id="processPayment">Procesar Pago</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2024 La Dolce Vita. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
